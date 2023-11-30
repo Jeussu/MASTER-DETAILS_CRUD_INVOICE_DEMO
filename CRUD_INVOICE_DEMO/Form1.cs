@@ -22,15 +22,15 @@ namespace CRUD_INVOICE_DEMO
         {
 
         }
-        //private void LoadData()
-        //{
-        //    using (SaleInvoiceEntities saleInvoice = new SaleInvoiceEntities())
-        //    {
-        //        var data = saleInvoice.SalesInvoices.ToList();
-        //        // Bind the data to the grid control
-        //        gridControl1.DataSource = data;
-        //    }
-        //}
+        private void LoadData()
+        {
+            using (SaleInvoiceEntities saleInvoice = new SaleInvoiceEntities())
+            {
+                var data = saleInvoice.SalesInvoices.ToList();
+                // Bind the data to the grid control
+                gridControl1.DataSource = data;
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             table.Columns.Add("InvoiceNumber", Type.GetType("System.String"));

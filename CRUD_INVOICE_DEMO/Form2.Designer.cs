@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbcolumn2 = new System.Windows.Forms.ComboBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.salesInvoicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.saleInvoiceDataSet1 = new CRUD_INVOICE_DEMO.SaleInvoiceDataSet1();
@@ -68,35 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.invoiceItemsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "SaleInvoiceCombo";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // cmbcolumn2
-            // 
-            this.cmbcolumn2.FormattingEnabled = true;
-            this.cmbcolumn2.Location = new System.Drawing.Point(138, 31);
-            this.cmbcolumn2.Name = "cmbcolumn2";
-            this.cmbcolumn2.Size = new System.Drawing.Size(121, 21);
-            this.cmbcolumn2.TabIndex = 2;
-            this.cmbcolumn2.SelectedIndexChanged += new System.EventHandler(this.cmbcolumn_SelectedIndexChanged);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(401, 436);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // gridControl1
             // 
@@ -313,17 +281,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 421);
+            this.ClientSize = new System.Drawing.Size(1002, 426);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd1);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.gridControl1);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.cmbcolumn2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Name = "Form2";
             this.Text = "Search InvoiceItem";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -340,9 +305,6 @@
     }
 
     #endregion
-    private System.Windows.Forms.Label label3;
-    private System.Windows.Forms.ComboBox cmbcolumn2;
-    private System.Windows.Forms.Button btnAdd;
     private DevExpress.XtraGrid.GridControl gridControl1;
     private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     private DevExpress.XtraGrid.Columns.GridColumn colInvoiceNumber;
